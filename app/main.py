@@ -1,5 +1,5 @@
-from routes.search import search_yt
-from routes.stream import get_stream_url
+from app.routes.search import search_yt
+from app.routes.stream import get_stream_url
 from fastapi import FastAPI
 
 app = FastAPI(docs_url=None, redoc_url=None)

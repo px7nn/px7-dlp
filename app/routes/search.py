@@ -1,4 +1,4 @@
-from config import YDL_OPTIONS, DEFAULT_QUERY_POSTFIX, DEFAULT_YT_SEARCH_LIMIT
+from app.config import YDL_OPTIONS, DEFAULT_QUERY_POSTFIX, DEFAULT_YT_SEARCH_LIMIT
 import yt_dlp
 
 def search_yt(query, postfix, limit):
