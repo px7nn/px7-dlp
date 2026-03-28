@@ -1,5 +1,8 @@
 # 🎧 px7-dlp API
 
+![Status](https://img.shields.io/uptimerobot/status/m802716312-e588c1cc94949a008b6ba422?style=for-the-badge)
+
+
 A lightweight API for discovering media via YouTube search and retrieving temporary audio stream URLs.
 
 **Base URL:** ``https://px7-dlp.onrender.com``
