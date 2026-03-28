@@ -1,8 +1,19 @@
 from app.routes.search import search_yt
 from app.routes.stream import get_stream_url
 from fastapi import FastAPI
+from fastapi.responses import Response
+
+
 
 app = FastAPI(docs_url=None, redoc_url=None)
+
+@app.head("/ping")
+def ping_head():
+    return Response(status_code=200)
+
+@app.get("/ping")
+def ping():
+    return {"status": "px7-dlp running"}
 
 @app.get("/")
 def home():
