@@ -59,7 +59,14 @@ Search YouTube and return structured video metadata.
     "name": "The Weeknd - Blinding Lights (Official Audio)",
     "video_url": "https://youtube.com/watch?v=fHI8X4OXluQ",
     "from": "The Weeknd",
-    "duration": 204
+    "duration": 204,
+    "thumbnails": [
+      {
+        "url": "https://...",
+        "height": 202,
+        "width": 360
+      }, ...
+    ]
   }
 ]
 ```

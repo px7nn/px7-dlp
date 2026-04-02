@@ -20,6 +20,7 @@ def search_yt(query, postfix, limit):
             "name": entry.get('title'),
             "video_url": f"https://youtube.com/watch?v={entry.get('id')}",
             "from": entry.get("uploader"),
-            "duration": duration
+            "duration": duration,
+            "thumbnails": entry.get("thumbnails")
         })
     return results

@@ -2,10 +2,18 @@ from app.routes.search import search_yt
 from app.routes.stream import get_stream_url
 from fastapi import FastAPI
 from fastapi.responses import Response
-
+from fastapi.middleware.cors import CORSMiddleware
 
 
 app = FastAPI(docs_url=None, redoc_url=None)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.head("/ping")
 def ping_head():
